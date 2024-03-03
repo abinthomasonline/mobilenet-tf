@@ -8,10 +8,10 @@
 <body>
     <h1>Image Classification with MobileNet</h1>
 
-    <!-- Image Upload -->
+    <!-- Image Upload (Display only after model loading is complete) -->
     <input type="file" id="imageUpload" accept="image/*" hidden>
 
-    <!-- Display Inference Results -->
+    <!-- Prepend all results -->
     <h2>Results</h2>
     <div id="results" style="width: 600px; text-align: center;"></div>
 
@@ -28,7 +28,7 @@
             imageUpload.hidden = false;  // Unhide the image upload button
         }
         
-        // Handle image uploads
+        // Inference when an image is uploaded
         imageUpload.addEventListener('change', async (event) => {
             const file = event.target.files[0];
             if (file) {
@@ -70,7 +70,6 @@
                 reader.readAsDataURL(file);
             }
         });
-        
         loadModel();        
     </script>
 </body>
