@@ -18,6 +18,8 @@ cd finetune-mobilenet-tfjs
 pip install -r requirements.txt
 ```
 
+The code is tested with Python 3.11.7 in OSX.
+
 ## Kaggle Authentication for Dataset
 
 To download the dataset, you need to have a Kaggle account and a Kaggle API key. You can create a new API key from your Kaggle account settings. Once you have the API key, create a new file `kaggle.json` in the secrets directory of the project and add the API key to the file as shown below:
