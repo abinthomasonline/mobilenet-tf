@@ -2,6 +2,12 @@
 
 This is a simple example of how to finetune a Mobilenet model and use it in a web application using Tensorflow.js. The web application will allow you to upload a picture and classify it using the finetuned model.
 
+
+## Demo
+
+You can try the web application [here](https://abinthomas.in/mobilenet-tf/) (Hosted on github-pages).
+[![WebApp Demo](demo.gif)](https://abinthomas.in/mobilenet-tf/)
+
 ## Installation
 
 First, clone the repository and install the required packages:
